@@ -3,7 +3,7 @@ public class SecondsCount {
 
         int totalSeconds = 0;
 
-        totalSeconds = 24 * 60 * 60;     //Calculate total minutes in 24 hour
+        totalSeconds = 24 * 60 * 60;     //Calculate total seconds in 24 hour
         System.out.println(totalSeconds);
     }
 }
