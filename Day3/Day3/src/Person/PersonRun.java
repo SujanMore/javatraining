@@ -13,7 +13,7 @@ public class PersonRun {
         PersonDetails sujan = new PersonDetails("Sujan", "Kandivali - East");
 
         sujan.setHobby("Listening to music");
-        sujan.setWork("idigicloud");
+        sujan.setWork("idigicloud.");
 
         System.out.println(sujan);
         System.out.println("");
