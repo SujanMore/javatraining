@@ -12,7 +12,7 @@ public class OnlineShoppingRun {
     public static void main(String[] args) {
 
         OnlineShopping vinit = new OnlineShopping("Vinit", "Kandivali East");
-        OnlineShopping sujan = new OnlineShopping("Sujan", "Pune");
+        OnlineShopping sujan = new OnlineShopping("Sujan", "Borivali West");
 
         sujan.login();
         sujan.addItem();
