@@ -8,7 +8,7 @@ public class MotorBikeRun {
 
         System.out.println("Speed of " + suzuki.getBikeName() + " is " + suzuki.getSpeed());
 
-        suzuki.setSpeed(100);
+        suzuki.setSpeed(110);
         bajaj.increaseSpeed(50);
 
         System.out.println(suzuki.getBikeName() + " speed is " + suzuki.getSpeed());        //Call object methods
