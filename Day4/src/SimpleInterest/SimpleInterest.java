@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 
 public class SimpleInterest {
 
-    BigDecimal principalAmount;
-    BigDecimal interestAmount;
+    private final BigDecimal principalAmount;           //Intellij suggests to make these instance variable as final. Not sure why.
+    private final BigDecimal interestAmount;
 
     //BigDecimal Used for accurate value as result.
     public SimpleInterest(String principalAmount, String interestAmount) {
