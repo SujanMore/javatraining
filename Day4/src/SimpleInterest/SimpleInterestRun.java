@@ -24,8 +24,10 @@ public class SimpleInterestRun {
 
         SimpleInterest calculateInterest = new SimpleInterest(principalAmount, interestRate);
 
-        BigDecimal totalAmount = calculateInterest.calculateValue(years);
+        BigDecimal interestAmount = calculateInterest.calculateInterest(years);
+        BigDecimal totalAmount = calculateInterest.calculateTotalAmount(years);
 
+        System.out.println("Total Interest Amount is: Rs." + interestAmount);
         System.out.println("Total Amount to be paid is: Rs." + totalAmount);
     }
 }

@@ -13,10 +13,12 @@ public class SimpleInterest {
         this.interestAmount = new BigDecimal(interestAmount).divide(new BigDecimal("100"));
     }
 
-
-    public BigDecimal calculateValue(int year) {
-        return principalAmount.add(principalAmount.
+    public BigDecimal calculateInterest(int year){
+        return principalAmount.
                 multiply(interestAmount).
-                multiply(new BigDecimal(year)));
+                multiply(new BigDecimal(year));
+    }
+    public BigDecimal calculateTotalAmount(int year) {
+        return principalAmount.add(calculateInterest(year));
     }
 }
