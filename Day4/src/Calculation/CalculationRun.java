@@ -19,26 +19,12 @@ public class CalculationRun {
         int menu = input.nextInt();
         while(exit == 0){
 
-            switch(menu){
-                case 1:
-                    calculate.add();
-                    break;
-
-                case 2:
-                    calculate.subtract();
-                    break;
-
-                case 3:
-                    calculate.multiply();
-                    break;
-
-                case 4:
-                    calculate.divide();
-                    break;
-
-                case 5:
-                    exit = 1;
-                    break;
+            switch (menu) {
+                case 1 -> calculate.add();
+                case 2 -> calculate.subtract();
+                case 3 -> calculate.multiply();
+                case 4 -> calculate.divide();
+                case 5 -> exit = 1;
             }
 
             System.out.println("Press 1: Continue or 5: exit");
