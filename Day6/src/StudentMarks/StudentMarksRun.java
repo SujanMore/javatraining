@@ -18,11 +18,9 @@ public class StudentMarksRun {
         while(true){
 
             tempMarks = input.nextInt();
-
             if(tempMarks == -1) {
                 break;
             }
-
             marks.add(tempMarks);
         }
 
@@ -32,5 +30,16 @@ public class StudentMarksRun {
         System.out.println("Minimum Mark: " + student.getMinMarks());
         System.out.println("Maximum Mark: " + student.getMaxMarks());
         System.out.println("Average Marks: " + student.getAverage());
+
+        System.out.print("Add new mark: ");
+        int addNum = input.nextInt();
+        student.addMarks(addNum);
+        System.out.println(student);
+
+        System.out.println("Give Index of Mark to remove");
+        int index = input.nextInt();
+        student.removeMarks(index);
+        System.out.println(student);
+
     }
 }

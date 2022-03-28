@@ -10,8 +10,9 @@ public class StudentMarks {
     private final String name;
     private final ArrayList<Integer> marks = new ArrayList<Integer>();
 
-    public StudentMarks(String name, ArrayList<Integer> marks) {
+    public StudentMarks(String name, ArrayList<Integer>marks) {
         this.name = name;
+
 
         /* Using Collections to all elements of the
         marks ArrayList Parameter to the member variable pf the class */
@@ -19,10 +20,12 @@ public class StudentMarks {
     }
 
     public String getName() {
+
         return name;
     }
 
     public int getNumOfMarks(){
+
         return marks.size();
     }
 
@@ -66,6 +69,14 @@ public class StudentMarks {
         minMark = Collections.min(marks);
 
         return minMark;
+    }
+
+    public void addMarks(int mark){
+        this.marks.add(mark);
+    }
+
+    public void removeMarks(int index){
+        this.marks.remove(index);
     }
 
     public BigDecimal getAverage(){
