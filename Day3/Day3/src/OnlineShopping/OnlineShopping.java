@@ -11,10 +11,12 @@ public class OnlineShopping {
         }
 
         public void login(){
+
             System.out.println(custName + " has logged in");
         }
 
         public void logout(){
+
             System.out.println(custName + " has logged out");
         }
 
@@ -23,6 +25,7 @@ public class OnlineShopping {
         }
 
         public void removeItem(){
+
             System.out.println("Item removed for " + custName);
         }
 }
