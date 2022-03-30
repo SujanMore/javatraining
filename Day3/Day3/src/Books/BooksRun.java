@@ -12,7 +12,7 @@ public class BooksRun {
 
         System.out.println("Number of copies sold of book: " + harryPotter.getName() + " is " + harryPotter.getCopiesSold());
         System.out.println("");
-        
+
         System.out.println(harryPotter);
     }
 }

@@ -17,14 +17,17 @@ public class Books {
     }
 
     public String getName() {
+
         return name;
     }
 
     public int getCopiesSold() {
+
         return copiesSold;
     }
 
     public void setCopiesSold(int copiesSold) {
+
         this.copiesSold = copiesSold;
     }
 
