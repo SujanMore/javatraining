@@ -19,7 +19,7 @@ public class GenericList<T> {
 
         return list.get(index);
     }
-    
+
     @Override
     public String toString() {
         return "GenericList{" +

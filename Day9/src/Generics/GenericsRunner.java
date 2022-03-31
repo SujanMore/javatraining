@@ -27,7 +27,7 @@ public class GenericsRunner {
         System.out.println(" ");
 
         GenericList<Double> doubleList = new GenericList<>();
-        doubleList.addElement(234.54);
+        doubleList.addElement(234.55);
         doubleList.addElement(1.4);
         System.out.println(doubleList.getElement(1));
         System.out.println(doubleList);
