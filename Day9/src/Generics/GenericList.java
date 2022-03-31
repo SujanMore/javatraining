@@ -15,14 +15,15 @@ public class GenericList<T> {
         return list.remove(element);
     }
 
+    public T getElement(int index) {
+
+        return list.get(index);
+    }
+    
     @Override
     public String toString() {
         return "GenericList{" +
                 "list=" + list +
                 '}';
-    }
-
-    public T getElement(int index) {
-        return list.get(index);
     }
 }
