@@ -7,6 +7,7 @@ public class GenericList<T> {
     ArrayList<T> list = new ArrayList<>();
 
     public void addElement(T element){
+
         list.add(element);
     }
 
