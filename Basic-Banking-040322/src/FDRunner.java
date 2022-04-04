@@ -166,8 +166,8 @@ public class FDRunner {
 
         DecimalFormat df = new DecimalFormat("#,###.00");
         for(FDAccount list: depositList){
-            System.out.printf("%15s %8d Months %15s %15f %15s %15s", list.getName(), list.getDuration(),
-                    df.format(list.getPrincipalAmount()), list.getInterestRate(), df.format(list.getInterestAmount()), df.format(list.getTotalAmount()));
+            System.out.printf("%15s %8d Months %15s %15s %15s %15s", list.getName(), list.getDuration(),
+                    df.format(list.getPrincipalAmount()), df.format(list.getInterestRate()), df.format(list.getInterestAmount()), df.format(list.getTotalAmount()));
             System.out.println();
         }
         System.out.println("-------------------------------------------------------------------------------------------------------");
