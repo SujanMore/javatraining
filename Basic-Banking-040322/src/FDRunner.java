@@ -17,7 +17,7 @@ public class FDRunner {
         double[][] numArray = new double[ROWS][COLUMNS];
         int row = 0;
 
-        File file = new File("C:\\Users\\LENOVO\\IdeaProjects\\javatraining\\Basic-Banking-040322\\src\\FDInterestRate.txt");
+        File file = new File("src\\FDInterestRate.txt");
         Scanner input = new Scanner(file);
 
         while(input.hasNextLine()){
