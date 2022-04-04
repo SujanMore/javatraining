@@ -34,6 +34,32 @@ public class FDRunner {
         return numArray;
     }
 
+    public static void savingAccountMenu(){
+        ArrayList<SavingAccount> list = new ArrayList<>();
+
+        while(true){
+            System.out.println("        Saving Account       ");
+            System.out.println("1. Enter Customer Details    ");
+            System.out.println("2. Saving Operations         ");
+            System.out.println("3. Print all Customers       ");
+            System.out.println("     (Press -1 to Exit)      ");
+            System.out.println("-----------------------------");
+
+            int op = input.nextInt();
+            input.nextLine();
+
+            if(op == 1){
+                list = savingAccountEntry();
+            } else if(op == 2){
+                searchSavingAccount(list);
+            } else if(op == 3){
+                printAllSavingAccount(list);
+            } else{
+                break;
+            }
+        }
+    }
+
     private static void fixedDepositMenu(InterestTable table) throws InterruptedException {
 
         ArrayList<FDAccount> customerList;
@@ -129,66 +155,35 @@ public class FDRunner {
         return customerList;
     }
 
-    public static void savingAccountMenu(){
-        ArrayList<SavingAccount> list = new ArrayList<>();
+    public static void savingAccountOperation(SavingAccount account){
+
+        BigDecimal amount;
 
         while(true){
-            System.out.println("        Saving Account       ");
-            System.out.println("1. Enter Customer Details    ");
-            System.out.println("2. Saving Operations         ");
-            System.out.println("3. Print all Customers       ");
+            System.out.println("-----------------------------");
+            System.out.println("Account: " + account.getName() + '.' +
+                    " Balance: " + account.getBalance());
+            System.out.println("-----------------------------");
+            System.out.println("1. Deposit Amount            ");
+            System.out.println("2. WithDraw Amount           ");
             System.out.println("     (Press -1 to Exit)      ");
             System.out.println("-----------------------------");
 
-            int op = input.nextInt();
+            int option = input.nextInt();
             input.nextLine();
 
-            if(op == 1){
-                list = savingAccountEntry();
-            } else if(op == 2){
-                searchSavingAccount(list);
-            } else if(op == 3){
-                printAllSavingAccount(list);
+            if(option == 1){
+                System.out.println("Enter Deposit Amt: ");
+                amount = input.nextBigDecimal();
+                account.AmountDeposit(amount);
+            } else if (option == 2){
+                System.out.println("Enter WithDraw Amt: ");
+                amount = input.nextBigDecimal();
+                account.AmountWithDraw(amount);
             } else{
                 break;
             }
         }
-    }
-
-    public static void printAllFDAccount(ArrayList<FDAccount> depositList){
-
-        System.out.println("-------------------------------------------------------------------------------------------------------");
-        System.out.println("                                 FIXED DEPOSIT ACCOUNT LIST                                            ");
-        System.out.println("-------------------------------------------------------------------------------------------------------");
-        System.out.printf("%15s %15s %15s %15s %15s %15S", "CUST. NAME", "DURATION", "PRINCIPAL AMT", "INTEREST RATE", "INTEREST AMT", "TOTAL AMT");
-        System.out.println();
-        System.out.println("-------------------------------------------------------------------------------------------------------");
-
-        DecimalFormat df = new DecimalFormat("#,###.00");
-        for(FDAccount list: depositList){
-            System.out.printf("%15s %8d Months %15s %15s %15s %15s", list.getName(), list.getDuration(),
-                    df.format(list.getPrincipalAmount()), df.format(list.getInterestRate()), df.format(list.getInterestAmount()), df.format(list.getTotalAmount()));
-            System.out.println();
-        }
-        System.out.println("-------------------------------------------------------------------------------------------------------");
-    }
-
-    public static void printAllSavingAccount(ArrayList<SavingAccount> savingList){
-
-        System.out.println("-------------------------------------------------------------------------------------------------------");
-        System.out.println("                                    SAVING ACCOUNT LIST                                                ");
-        System.out.println("-------------------------------------------------------------------------------------------------------");
-        System.out.printf("%15s %15s %15s %15s %15s", "CUST. NAME", "MOBILE NO.", "DEPOSIT AMT", "WITHDRAW AMT", "BALANCE AMT");
-        System.out.println();
-        System.out.println("-------------------------------------------------------------------------------------------------------");
-
-        DecimalFormat df = new DecimalFormat("#,###.00");
-        for(SavingAccount list: savingList){
-            System.out.printf("%15s %15s %15s %15s %15s", list.getName(), list.getMobile(),
-                    df.format(list.getDepositAmount()), df.format(list.getWithDrawAmount()), df.format(list.getBalance()));
-            System.out.println();
-        }
-        System.out.println("-------------------------------------------------------------------------------------------------------");
     }
 
     public static int searchSavingAccount(ArrayList<SavingAccount> savingList){
@@ -230,6 +225,42 @@ public class FDRunner {
         }
 
         return 0;
+    }
+
+    public static void printAllFDAccount(ArrayList<FDAccount> depositList){
+
+        System.out.println("-------------------------------------------------------------------------------------------------------");
+        System.out.println("                                 FIXED DEPOSIT ACCOUNT LIST                                            ");
+        System.out.println("-------------------------------------------------------------------------------------------------------");
+        System.out.printf("%15s %15s %15s %15s %15s %15S", "CUST. NAME", "DURATION", "PRINCIPAL AMT", "INTEREST RATE", "INTEREST AMT", "TOTAL AMT");
+        System.out.println();
+        System.out.println("-------------------------------------------------------------------------------------------------------");
+
+        DecimalFormat df = new DecimalFormat("#,###.00");
+        for(FDAccount list: depositList){
+            System.out.printf("%15s %8d Months %15s %15s %15s %15s", list.getName(), list.getDuration(),
+                    df.format(list.getPrincipalAmount()), df.format(list.getInterestRate()), df.format(list.getInterestAmount()), df.format(list.getTotalAmount()));
+            System.out.println();
+        }
+        System.out.println("-------------------------------------------------------------------------------------------------------");
+    }
+
+    public static void printAllSavingAccount(ArrayList<SavingAccount> savingList){
+
+        System.out.println("-------------------------------------------------------------------------------------------------------");
+        System.out.println("                                    SAVING ACCOUNT LIST                                                ");
+        System.out.println("-------------------------------------------------------------------------------------------------------");
+        System.out.printf("%15s %15s %15s %15s %15s", "CUST. NAME", "MOBILE NO.", "DEPOSIT AMT", "WITHDRAW AMT", "BALANCE AMT");
+        System.out.println();
+        System.out.println("-------------------------------------------------------------------------------------------------------");
+
+        DecimalFormat df = new DecimalFormat("#,###.00");
+        for(SavingAccount list: savingList){
+            System.out.printf("%15s %15s %15s %15s %15s", list.getName(), list.getMobile(),
+                    df.format(list.getDepositAmount()), df.format(list.getWithDrawAmount()), df.format(list.getBalance()));
+            System.out.println();
+        }
+        System.out.println("-------------------------------------------------------------------------------------------------------");
     }
 
     public static ArrayList<SavingAccount> savingAccountEntry(){
@@ -274,36 +305,6 @@ public class FDRunner {
         return list;
     }
 
-    public static void savingAccountOperation(SavingAccount account){
-
-        BigDecimal amount;
-
-        while(true){
-            System.out.println("-----------------------------");
-            System.out.println("Account: " + account.getName() + '.' +
-                    " Balance: " + account.getBalance());
-            System.out.println("-----------------------------");
-            System.out.println("1. Deposit Amount            ");
-            System.out.println("2. WithDraw Amount           ");
-            System.out.println("     (Press -1 to Exit)      ");
-            System.out.println("-----------------------------");
-
-            int option = input.nextInt();
-            input.nextLine();
-
-            if(option == 1){
-                System.out.println("Enter Deposit Amt: ");
-                amount = input.nextBigDecimal();
-                account.AmountDeposit(amount);
-            } else if (option == 2){
-                System.out.println("Enter WithDraw Amt: ");
-                amount = input.nextBigDecimal();
-                account.AmountWithDraw(amount);
-            } else{
-                break;
-            }
-        }
-    }
 
     public static void main(String[] args) throws FileNotFoundException, InterruptedException {
 
