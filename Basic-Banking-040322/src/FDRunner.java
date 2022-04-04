@@ -13,6 +13,9 @@ public class FDRunner {
 
     static Scanner input = new Scanner(System.in);
 
+    /*
+    Read Interest Rate Table from a file.
+     */
     public static double[][] readInterestCSV() throws FileNotFoundException {
         double[][] numArray = new double[ROWS][COLUMNS];
         int row = 0;
@@ -34,7 +37,7 @@ public class FDRunner {
         return numArray;
     }
 
-    public static void savingAccountMenu(){
+    public static void savingAccountMenu() throws InterruptedException {
         ArrayList<SavingAccount> list = new ArrayList<>();
 
         while(true){
@@ -186,9 +189,15 @@ public class FDRunner {
         }
     }
 
-    public static int searchSavingAccount(ArrayList<SavingAccount> savingList){
+    public static int searchSavingAccount(ArrayList<SavingAccount> savingList) throws InterruptedException {
 
         int index = 0;
+
+        if(savingList.size() == 0){
+            System.out.println("Saving Account Database is Empty!");
+            Thread.sleep(2000);
+            return 0;
+        }
 
         System.out.println(" Search Customer Saving Acc. ");
         System.out.println("1. By Name                   ");
@@ -310,7 +319,7 @@ public class FDRunner {
 
         InterestTable table = new InterestTable(readInterestCSV());
 
-        ArrayList<SavingAccount> savingList;
+        //ArrayList<SavingAccount> savingList;
 
         Scanner input = new Scanner(System.in);
 

@@ -13,15 +13,19 @@ public class FDAccount {
     public FDAccount(String name, double principalAmount, int duration, double rate) {
         this.name = name;
         this.principalAmount = principalAmount;
-        this.duration = duration;
-        this.interestRate = rate;
-//        this.interestAmount = new BigDecimal(rate).divide(new BigDecimal("100"))
-//                .multiply(new BigDecimal(principalAmount).multiply(new BigDecimal(duration/12.0)));
+        this.duration = duration;               //In Months
+        this.interestRate = rate;               //Taken from the interest table.
 
-        this.interestAmount = new BigDecimal(principalAmount).multiply(new BigDecimal(rate))
-                .multiply(new BigDecimal(duration/12.0)).divide(new BigDecimal("100"), 2, RoundingMode.UP);
+//      this.interestAmount = new BigDecimal(principalAmount).multiply(new BigDecimal(rate))
+//               .multiply(new BigDecimal(duration/12.0)).divide(new BigDecimal("100"), 2, RoundingMode.UP);
+//      this.totalAmount = this.interestAmount.add(new BigDecimal(principalAmount));
 
-        this.totalAmount = this.interestAmount.add(new BigDecimal(principalAmount));
+        int n = 4;          //Number of times to be compounded.
+        double totAmount = Math.ceil(principalAmount * Math.pow(1 + ((rate/100) / n),n * (duration/12.0)));
+        double interestAmt = totAmount - principalAmount;
+
+        this.interestAmount = BigDecimal.valueOf(interestAmt);
+        this.totalAmount = BigDecimal.valueOf(totAmount);
     }
 
     public String getName() {
