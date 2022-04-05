@@ -28,11 +28,11 @@ public class StudentCollectionRunner {
             Sorting the students objects using comparator interface.
          */
         Collections.sort(studentsAl);
-        System.out.println("Ascending sort by ID" + studentsAl);
+        System.out.println("Ascending sort by ID: " + studentsAl);
 
         //Collections.sort(studentsAl, new StudentCompareDescending());
         studentsAl.sort(new StudentCompareDescending());
-        System.out.println("Descending sort by ID" + studentsAl);
+        System.out.println("Descending sort by ID: " + studentsAl);
 
 
     }
