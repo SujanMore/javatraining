@@ -1,4 +1,4 @@
-package FileListAndFilter;
+package FileHandling;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,7 +8,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
-public class FileRunner {
+public class FileListAndFilter {
     public static void main(String[] args) throws IOException {
 
         Path directory = Paths.get(".");
