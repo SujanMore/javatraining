@@ -5,18 +5,16 @@ import java.util.Scanner;
 
 public class StudentMarksRun {
     public static void main(String[] args) {
-        int tempMarks = 0;
-        ArrayList<Integer> marks = new ArrayList<>();
 
         Scanner input = new Scanner(System.in);
-
         System.out.print("Enter Student's Name: ");
         String name = input.nextLine();
 
         System.out.println("Enter Marks (Press -1 to Exit)");
 
+        ArrayList<Integer> marks = new ArrayList<>();
+        int tempMarks = 0;
         while(true){
-
             tempMarks = input.nextInt();
             if(tempMarks == -1) {
                 break;
@@ -25,11 +23,12 @@ public class StudentMarksRun {
         }
 
         StudentMarks student = new StudentMarks(name, marks);
-        System.out.println("Sum of Marks of " + student.getName() + " is " + student.getSumOfMarks());
-        System.out.println("Total Subjects: " + student.getNumOfMarks());
-        System.out.println("Minimum Mark: " + student.getMinMarks());
-        System.out.println("Maximum Mark: " + student.getMaxMarks());
-        System.out.println("Average Marks: " + student.getAverage());
+        System.out.println("Sum of Marks of " + student.getName()
+                + " is " + student.getSumOfMarks() +
+            "\nTotal Subjects: " + student.getNumOfMarks() +
+            "\nMinimum Mark: " + student.getMinMarks() +
+            "\nMaximum Mark: " + student.getMaxMarks() +
+            "\nAverage Marks: " + student.getAverage());
 
         System.out.print("Add new mark: ");
         int addNum = input.nextInt();

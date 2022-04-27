@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="96acb183-aeaa-43ed-8366-3970bf3663a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Day2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day2/Day2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day2/out/production/Day2/Day2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day1/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day1/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/src/MotorBike/MotorBike.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/src/MotorBike/MotorBike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day4/src/Calculation/Calculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day4/src/Calculation/Calculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day5/out/production/Day5/NumbersForLoop/NumbersForLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Day5/out/production/Day5/NumbersForLoop/NumbersForLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day5/out/production/Day5/StudentMarks/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day5/out/production/Day5/StudentMarks/StudentRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day8/out/production/Day8/AnimalAbstract/Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Day8/out/production/Day8/AnimalAbstract/Dog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day8/src/AnimalAbstract/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day8/src/AnimalAbstract/Dog.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="279LGZ9tmk18NtABM57UaMxtPpy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Day5" />
+  </component>
+  <component name="RunManager" selected="Application.MotorBikeRun">
+    <configuration name="MotorBikeRun" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MotorBike.MotorBikeRun" />
+      <module name="Day3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MotorBike.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OnlineShoppingRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OnlineShopping.OnlineShoppingRun" />
+      <module name="Day3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OnlineShopping.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Person.PersonRun" />
+      <module name="Day3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Person.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PersonRun" />
+        <item itemvalue="Application.OnlineShoppingRun" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96acb183-aeaa-43ed-8366-3970bf3663a1" name="Changes" comment="" />
+      <created>1648727260209</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648727260209</updated>
+    </task>
+    <servers />
+  </component>
+</project>
