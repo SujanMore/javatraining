@@ -1,10 +1,20 @@
 package com.training.springboot.courses.bean;
 
-public class Course {
+import javax.persistence.*;
 
+@Entity
+public class Course {
+    @Id
+    @GeneratedValue
     private long id;
+
     private String name;
+
     private String author;
+
+    public Course(){
+
+    }
 
     public Course(long id, String name, String author) {
         this.id = id;
