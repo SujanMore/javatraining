@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c934994-f08e-48ef-8370-9dad1e458147" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/javatraining.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic-Banking-040322/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Basic-Banking-040322/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day6/src/StudentMarks/StudentMarksRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day6/src/StudentMarks/StudentMarksRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day7/out/production/Day7/Inheritance/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/out/production/Day7/Inheritance/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day7/out/production/Day7/Rectangle/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/out/production/Day7/Rectangle/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day7/src/Inheritance/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/src/Inheritance/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day7/src/Rectangle/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day7/src/Rectangle/Rectangle.java" afterDir="false" />
-    </list>
+    <list default="true" id="2c934994-f08e-48ef-8370-9dad1e458147" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
