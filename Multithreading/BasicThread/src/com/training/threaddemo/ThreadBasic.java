@@ -1,4 +1,4 @@
-package com.training.threaddemo1;
+package com.training.threaddemo;
 
 class MyThread extends Thread {
 
@@ -10,7 +10,7 @@ class MyThread extends Thread {
         }
     }
 }
-public class ThreadDemo1 {
+public class ThreadBasic {
 
     public static void main(String[] args) {
 
