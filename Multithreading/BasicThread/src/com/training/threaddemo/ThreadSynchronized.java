@@ -2,8 +2,12 @@ package com.training.threaddemo;
 
 class Table {
     public void display(int n) {
-        for (int i = 1; i < 10; i++) {
-            System.out.println(n * i);
+
+        synchronized (this) {
+
+            for (int i = 1; i <= 10; i++) {
+                System.out.println(n * i);
+            }
         }
     }
 }
@@ -12,10 +16,12 @@ class Thread1 extends Thread {
     Table t;
 
     public Thread1(Table t) {
+
         this.t = t;
     }
 
     public void run() {
+
         t.display(5);
     }
 }
@@ -24,10 +30,12 @@ class Thread2 extends Thread {
     Table t;
 
     public Thread2(Table t) {
+
         this.t = t;
     }
 
     public void run() {
+
         t.display(7);
     }
 }
