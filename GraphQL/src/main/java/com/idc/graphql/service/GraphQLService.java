@@ -58,15 +58,15 @@ public class GraphQLService {
     private void loadDataIntoHSQL() {
 
         Stream.of(
-                new Book("123", "Book of Clouds", "Kindle Edition",
+                new Book("123", "Book of Clouds.", "Kindle Edition",
                         new String[] {
                                 "Chloe Aridjis"
                         }, "Nov 2017"),
-                new Book("124", "Cloud Arch & Engineering", "Orielly",
+                new Book("124", "Cloud Arch & Engineering.", "Orielly",
                         new String[] {
                                 "Peter", "Sam"
                         }, "Jan 2015"),
-                new Book("125", "Java 9 Programming", "Orielly",
+                new Book("125", "Java 9 Programming.", "Orielly",
                         new String[] {
                                 "Venkat", "Ram"
                         }, "Dec 2016")
